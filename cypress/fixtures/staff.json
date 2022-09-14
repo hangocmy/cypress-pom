@@ -1,0 +1,164 @@
+{
+  "add": [
+    {
+      "name": "Ha Ngoc My",
+      "email": "hangocmy001@gmail.com",
+      "username": "adminHR01",
+      "phone": "1234567891",
+      "salary": "12000000",
+      "avatar": "adminHR.png",
+      "password": "123123",
+      "re_password": "123123",
+      "right": [
+        "Quyền truy cập danh sách nhân viên (xoá, sửa nhân viên)",
+        "Quyền phân quyền cho nhân viên (phân quyền)",
+        "Quyền truy cập danh sách khách hàng (xoá, sửa khách hàng)",
+        "Quyền thêm nhân viên mới (thêm nhân viên)"
+      ]
+    },
+    {
+      "name": "Mi Doan",
+      "email": "midoan@gmail.com",
+      "username": "adminVoucher01",
+      "phone": "1234567891",
+      "salary": "12000000",
+      "avatar": "adminVoucher.png",
+      "password": "123123",
+      "re_password": "123123",
+      "right": [
+        "Quyền truy cập danh sách nhân viên (xoá, sửa nhân viên)",
+        "Quyền truy cập danh sách sản phẩm (xoá, sửa sản phẩm)",
+        "Quyền thêm sản phẩm mới (thêm sản phẩm)",
+        "Quyền thêm thương hiệu mới (thêm thương hiệu)",
+        "Quyền thêm danh mục mới (thêm danh mục)",
+        "Quyền truy cập danh sách khách hàng (xoá, sửa khách hàng)"
+      ]
+    },
+    {
+      "name": "Nguyễn Tiến Lâm",
+      "email": "nguyentienlam@gmail.com",
+      "username": "seller01",
+      "phone": "1234567891",
+      "salary": "12000000",
+      "avatar": "seller.png",
+      "password": "123123",
+      "re_password": "123123",
+      "right": [
+        "Quyền truy cập bảng điều khiển (xác thực đơn hàng)",
+        "Quyền truy cập danh sách đơn hàng (xác thực, huỷ đơn hàng, xuất hoá đơn)"
+      ]
+    },
+    {
+      "name": "Phạm Duy",
+      "email": "phamduy@gmail.com",
+      "username": "adminSeller01",
+      "phone": "1234567891",
+      "salary": "12000000",
+      "avatar": "adminSeller.png",
+      "password": "123123",
+      "re_password": "123123",
+      "right": [
+        "Quyền truy cập danh sách sản phẩm (xoá, sửa sản phẩm)",
+        "Quyền truy cập bảng điều khiển (xác thực đơn hàng)",
+        "Quyền truy cập danh sách đơn hàng (xác thực, huỷ đơn hàng, xuất hoá đơn)",
+        "Quyền truy cập danh sách khách hàng (xoá, sửa khách hàng)"
+      ]
+    },
+    {
+      "name": "Kỷ Hắc",
+      "email": "kyhac@gmail.com",
+      "username": "agent01",
+      "phone": "1234567891",
+      "salary": "12000000",
+      "avatar": "adminHR.png",
+      "password": "123123",
+      "re_password": "123123",
+      "right": [
+        "Quyền truy cập danh sách đánh giá (xác thực, xoá đánh giá)",
+        "Quyền truy cập danh sách hỏi đáp (xác thực hỏi đáp)"
+      ]
+    },
+    {
+      "name": "Tùng Khắc Duy",
+      "email": "tungkhacduy@gmail.com",
+      "username": "staff01",
+      "phone": "1234567891",
+      "salary": "5000000",
+      "avatar": "agent.png",
+      "password": "123123",
+      "re_password": "123123",
+      "right": []
+    }
+  ],
+
+  "edit": [
+    {
+      "name": "Lạc Nhân Nghĩa",
+      "email": "nhannghi@gmail.com",
+      "username": "lacnghia223",
+      "avatar": "adminHR.png",
+      "password": "123123",
+      "re_password": "123123",
+      "phone": "0937429402",
+      "salary": "13450000",
+      "url": "http://localhost:3000/admin/edit-user?id=60a61d9e9337c04e003f398f",
+      "address": "123 ABC",
+      "city": "HCM",
+      "district": "7",
+      "postalCode": "70000",
+      "description": "Existed Staff"
+    },
+
+    {
+      "name": "Mi Mi Mi",
+      "email": "midoan001@gmail.com",
+      "username": "adminVoucher02",
+      "avatar": "adminHR.png",
+      "password": "123123",
+      "re_password": "123123",
+      "phone": "1987654321",
+      "salary": "12000000",
+      "url": "https://pluralsight.com",
+      "address": "123 ABC",
+      "city": "HCM",
+      "district": "7",
+      "postalCode": "70000",
+      "description": "Non-existed staff"
+    },
+    {
+      "name": "Đào Văn Vân",
+      "email": "daovanvan@gmail.com",
+      "username": "seller002",
+      "avatar": "seller.png",
+      "password": "123123",
+      "re_password": "123123",
+      "phone": "1987654321",
+      "salary": "12000000",
+      "url": "https://aws.com",
+      "address": "123 ABC",
+      "city": "HCM",
+      "district": "7",
+      "postalCode": "70000",
+      "description": "Create this for successfull screnario"
+    }
+  ],
+
+  "delete": [
+    {
+      "name": "Mi Mi Mi",
+      "email": "midoan021@gmail.com",
+      "username": "adminVoucher02",
+      "avatar": "adminHR.png",
+      "password": "123123",
+      "re_password": "123123",
+      "phone": "1987654321",
+      "salary": "12000000",
+      "url": "https://pluralsight.com",
+      "address": "123 ABC",
+      "city": "HCM",
+      "district": "7",
+      "postalCode": "70000",
+      "description": "Non-existed staff"
+    }
+  ]
+}
