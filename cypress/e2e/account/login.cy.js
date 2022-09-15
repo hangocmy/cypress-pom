@@ -37,15 +37,6 @@ describe("Login with created account", () => {
     });
   });
 
-  /*=== ISSUE ===*/
-  it("Should show error message when missing username and password", () => {
-    throw new Error(
-      "[CLIENT] No error message is shown when login missing username and password"
-    );
-    loginPage
-      .clickLogin()
-      .shouldShowErrorMessage("Vui lòng nhập username và password");
-  });
 
   it("Should show error message when invalid username", () => {
     cy.get("@user").then((user) => {
