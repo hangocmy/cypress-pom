@@ -13,7 +13,7 @@ on:
 jobs:
 
   deploy:
-    runs-on: ubuntu-latestild
+    runs-on: ubuntu-latest
     environment:
       name: "Production"
 
