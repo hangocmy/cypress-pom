@@ -68,4 +68,3 @@ jobs:
           heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
           heroku_app_name: 'voucher4u'
           heroku_email: ${{ secrets.HEROKU_EMAIL }}
-          publish-profile: 'https://voucher4u.herokuapp.com'
