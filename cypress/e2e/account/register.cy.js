@@ -80,19 +80,3 @@ describe('Register account', () => {
     });
   });
 });
-
-
-describe('MODULE ADMIN CUSTOMER', () => {
-  beforeEach(() => {
-    cy.adminLogin(Cypress.env("user_admin"), Cypress.env("pass_admin")).wait(500);
-    cy.url().should("include", common.LNK_DASHBOARD);
-  });
-
-
-  it('Delete customer successfully', () => {
-    cy.visit(common.LNK_CUSTOMER).wait(500);
-    adminCustomerPage
-      .clickDelete()
-      .clickConfirmDetele();
-  });
-});
