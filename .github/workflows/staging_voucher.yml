@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v1
+        uses: actions/checkout@v2
 
       - name: Create .env file
         uses: SpicyPizza/create-envfile@v1
@@ -30,11 +30,10 @@ jobs:
         with:
           node-version: "14.x"
 
-      - name: npm install, build, and test
+      - name: Install dependencies
         run: |
           npm install
           npm run build --if-present
-          npm run test --if-present
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v2
@@ -47,19 +46,15 @@ jobs:
     needs: build
     environment:
       name: "staging"
-      url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
 
     steps:
       - name: Download artifact from build job
         uses: actions/download-artifact@v2
-        with:
-          name: node-app
 
       - name: "Deploy staging to Heroku"
         uses: AkhileshNS/heroku-deploy@v3.12.12
         with:
           slot-name: "Staging"
           heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
-          heroku_app_name: ${{ secrets.HEROKU_APP_NAME_STAGING }}
+          heroku_app_name: 'panda-voucher'
           heroku_email: ${{ secrets.HEROKU_EMAIL }}
-          package: .
