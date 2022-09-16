@@ -24,13 +24,6 @@ jobs:
           envkey_CLOUD_NAME: ${{ secrets.CLOUD_NAME }}
           envkey_API_KEY: ${{ secrets.API_KEY }}
           envkey_API_SECRET: ${{ secrets.API_SECRET }}
-          envkey_LOGIN_CYPRESS: ${{ secrets.LOGIN_CYPRESS }}
-          envkey_USER_ADMIN_CYPRESS: ${{ secrets.USER_ADMIN_CYPRESS }}
-          envkey_PASS_ADMIN_CYPRESS: ${{ secrets.PASS_ADMIN_CYPRESS }}
-          envkey_USER_CUSTOMER_CYPRESS: ${{ secrets.USER_CUSTOMER_CYPRESS }}
-          envkey_PASS_CUSTOMER_CYPRESS: ${{ secrets.PASS_CUSTOMER_CYPRESS }}
-          envkey_PROJECT_ID: ${{ secrets.PROJECT_ID }}
-          envkey_ADMIN_LOGIN_URL: ${{ secrets.ADMIN_LOGIN_URL}}
 
       - name: Set up Node.js version
         uses: actions/setup-node@v1
@@ -67,6 +60,6 @@ jobs:
         with:
           slot-name: "Staging"
           heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
-          heroku_app_name: ${{ secrets.HEROKU_APP_NAME }}
+          heroku_app_name: ${{ secrets.HEROKU_APP_NAME_STAGING }}
           heroku_email: ${{ secrets.HEROKU_EMAIL }}
           package: .
