@@ -17,6 +17,7 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v1
+
     - name: Create .env file
       uses: SpicyPizza/create-envfile@v1
       with:
@@ -35,13 +36,14 @@ jobs:
         envkey_PASS_CUSTOMER_CYPRESS: ${{ secrets.PASS_CUSTOMER_CYPRESS }}
         envkey_PROJECT_ID: ${{ secrets.PROJECT_ID }}
         envkey_ADMIN_LOGIN_URL: ${{ secrets.ADMIN_LOGIN_URL}}
+
     - name: Cypress run
       uses: cypress-io/github-action@v4
       with:
         start: npm start
         browser: chrome
         headed: true
-        wait-on: ${{ secrets.URL }}
+        wait-on: ${{ secrets.URL_CYPRESS }}
         wait-on-timeout: 120
         record: true
       env:
@@ -58,11 +60,10 @@ jobs:
         with:
           node-version: "14.x"
 
-      - name: npm install, build, and test
+      - name: Install dependencies
         run: |
           npm install
           npm run build --if-present
-          npm run test --if-present
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v2
@@ -75,7 +76,6 @@ jobs:
     needs: build
     environment:
       name: "Production"
-      url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
 
     steps:
       - name: Download artifact from build job
@@ -90,4 +90,3 @@ jobs:
           heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
           heroku_app_name: ${{ secrets.HEROKU_APP_NAME }}
           heroku_email: ${{ secrets.HEROKU_EMAIL }}
-          package: .
