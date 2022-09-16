@@ -82,7 +82,7 @@ jobs:
         with:
           name: node-app
 
-      - name: "Deploy to Heroku"
+      - name: "Deploy production to Heroku"
         uses: AkhileshNS/heroku-deploy@v3.12.12
         with:
           slot-name: "Production"
