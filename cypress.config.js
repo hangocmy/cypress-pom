@@ -7,7 +7,7 @@ module.exports = defineConfig({
       return require("./cypress/plugins/index.js")(on, config);
     },
     supportFile: "cypress/support/commands.js",
-    baseUrl: process.env.URL,
+    baseUrl: process.env.URL_CYPRESS,
   },
   defaultCommandTimeout: 60000,
   pageLoadTimeout: 60000,

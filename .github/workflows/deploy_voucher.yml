@@ -27,6 +27,7 @@ jobs:
         envkey_CLOUD_NAME: ${{ secrets.CLOUD_NAME }}
         envkey_API_KEY: ${{ secrets.API_KEY }}
         envkey_API_SECRET: ${{ secrets.API_SECRET }}
+        envkey_URL_CYPRESS: ${{ secrets.URL_CYPRESS }}
         envkey_LOGIN_CYPRESS: ${{ secrets.LOGIN_CYPRESS }}
         envkey_USER_ADMIN_CYPRESS: ${{ secrets.USER_ADMIN_CYPRESS }}
         envkey_PASS_ADMIN_CYPRESS: ${{ secrets.PASS_ADMIN_CYPRESS }}
