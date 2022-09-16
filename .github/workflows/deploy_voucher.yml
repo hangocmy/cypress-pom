@@ -1,4 +1,4 @@
-name: Build and deploy Node.js app to Heroku
+name: Testing, build and deploy production to Heroku
 
 on:
   push:

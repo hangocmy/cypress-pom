@@ -1,6 +1,6 @@
 # CYPRESS TESTING 🧪
 
-## RUN CYPRESS ON LOCAL
+## 1. RUN CYPRESS ON LOCAL
 
 - Install package:
   `npm install`
@@ -17,11 +17,11 @@ or
 - Run all specs without GUI:
   `npx cypress run --e2e --browser chrome`
 
-## (CI/CD)
+## 2. (CI/CD)
 
-- Check the latest action in: https://github.com/hangocmy/testing-panda-voucher/actions/
+- Check the latest action in: https://github.com/hangocmy/panda-voucher/actions/
 
-## HOW TO WATCH TEST RESULT:
+## 3. HOW TO WATCH TEST RESULT:
 #### ON CYPRESS DASHBOARD:
 - Open browser and go to https://dashboard.cypress.io/projects/5vi6nx/runs
 - Choose latest runs and view
@@ -31,9 +31,8 @@ or
 #### DEFECTS LIST:
 - Open defects list: https://github.com/users/hangocmy/projects/10/views/5
 
----
 
-## ABOUT PANDAS VOUCHER SHOP
+## 4. ABOUT PANDAS VOUCHER SHOP
 
 Framework Nodejs + Cloud MongoAtlas + Cloud Cloudinary:
 
@@ -43,7 +42,10 @@ Framework Nodejs + Cloud MongoAtlas + Cloud Cloudinary:
 
 Panda voucher:
 
-- Staging: https://panda-voucher.herokuapp.com/
+| Environment | URL                                    |
+|-------------|----------------------------------------|
+| `Staging`   | https://panda-voucher.herokuapp.com/   |
+| `Production`| https://voucher4u.herokuapp.com/       |
 
-- Production: https://voucher4u.herokuapp.com/
+
 
