@@ -1,5 +1,6 @@
 # dependencies
 /node_modules
+.env
 
 #cypress dashboard
 /cypress/videos/
