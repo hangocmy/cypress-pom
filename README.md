@@ -41,3 +41,9 @@ Framework Nodejs + Cloud MongoAtlas + Cloud Cloudinary:
 
 - Admin role: `localhost:3000/22012000/login`
 
+Panda voucher:
+
+- Staging: https://panda-voucher.herokuapp.com/
+
+- Production: https://voucher4u.herokuapp.com/
+
