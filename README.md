@@ -1,6 +1,6 @@
 # CYPRESS TESTING 🧪
 
-## 1. RUN CYPRESS ON LOCAL
+## 1. HOW TO RUN CYPRESS ON LOCAL
 
 - Install package:
   `npm install`
@@ -20,11 +20,11 @@ or
 ## 2. (CI/CD)
 
 - Check the latest action in: https://github.com/hangocmy/panda-voucher/actions/
+- Workflow deploy staging/production to Heroku: https://github.com/hangocmy/panda-voucher/tree/deploy/.github/workflows
 
 ## 3. HOW TO WATCH TEST RESULT:
 #### ON CYPRESS DASHBOARD:
-- Open browser and go to https://dashboard.cypress.io/projects/5vi6nx/runs
-- Choose latest runs and view
+- Open browser and go to https://dashboard.cypress.io/projects/5vi6nx/runs, choose latest runs and view
 
 or
 
@@ -36,11 +36,13 @@ or
 
 Framework Nodejs + Cloud MongoAtlas + Cloud Cloudinary:
 
-- Customer role: `localhost:3000/`
+- Customer role: `${url}`
 
-- Admin role: `localhost:3000/22012000/login`
+- Admin role: `${url}/22012000/login`
 
-Panda voucher:
+---
+
+🚩 **Panda voucher:**
 
 | Environment | URL                                    |
 |-------------|----------------------------------------|
