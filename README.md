@@ -17,12 +17,7 @@ or
 - Run all specs without GUI:
   `npx cypress run --e2e --browser chrome`
 
-## 2. (CI/CD)
-
-- Check the latest action in: https://github.com/hangocmy/panda-voucher/actions/
-- Workflow deploy staging/production to Heroku: https://github.com/hangocmy/panda-voucher/tree/deploy/.github/workflows
-
-## 3. HOW TO WATCH TEST RESULT:
+## 2. HOW TO WATCH TEST RESULT:
 #### ON CYPRESS DASHBOARD:
 - Open browser and go to https://dashboard.cypress.io/projects/5vi6nx/runs, choose latest runs and view
 
@@ -32,13 +27,20 @@ or
 - Open defects list: https://github.com/users/hangocmy/projects/10/views/5
 
 
-## 4. ABOUT PANDAS VOUCHER SHOP
+## 3. ABOUT PANDAS VOUCHER SHOP
 
 Framework Nodejs + Cloud MongoAtlas + Cloud Cloudinary:
 
 - Customer role: `${url}`
 
 - Admin role: `${url}/22012000/login`
+
+
+## 4. (CI/CD)
+
+- Check the latest action in: <https://github.com/hangocmy/panda-voucher/actions/>
+- Workflow deploy staging/production to Heroku: <https://github.com/hangocmy/panda-voucher/tree/deploy/.github/workflows>
+
 
 ---
 

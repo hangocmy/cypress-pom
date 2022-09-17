@@ -3,7 +3,7 @@ name: Testing, build and deploy production to Heroku
 on:
   push:
     branches:
-      - deploy
+      - production
   workflow_dispatch:
 
 jobs:
