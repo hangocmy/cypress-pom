@@ -59,8 +59,8 @@ Framework Nodejs + Cloud MongoAtlas + Cloud Cloudinary:
 
 | Environment | URL                                    |
 |-------------|----------------------------------------|
-| `Staging`   | https://panda-voucher.herokuapp.com/   |
-| `Production`| https://voucher4u.herokuapp.com/       |
+| `Staging`   | https://panda-voucher.herokuapp.com/ (not available - Heroku ending free tier)|
+| `Production`| https://voucher4u.herokuapp.com/ (not available - Heroku ending free tier)    |
 
 
 
